@@ -17,7 +17,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "rootDir": "./pages",
+    "outDir": "./dist"
   },
   "include": [
     "next-env.d.ts",
@@ -26,5 +28,6 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+
 }

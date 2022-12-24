@@ -2,9 +2,18 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
+import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
-
+// props として受け取る型の定義（`Props`部分の名前はどんな名前でも可）
+type Props = {
+    text: string;
+};
+let props = "a";
+// ③ props に直接型注釈を指定するパターン
+const SampleComponent3 = (props: string) => {
+    return <div>Hello {props}!</div>;
+};
 export default function Home() {
     return (
         <>
